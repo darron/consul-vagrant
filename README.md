@@ -2,7 +2,7 @@
 
 An easy way to get a cluster of Consul boxes to play with.
 
-These boxes are built with [consul-cookbook](https://github.com/darron/consul-cookbook) and are available on Vagrant Cloud as `darron/consul`.
+These boxes are built with [consul-cookbook](https://github.com/darron/consul-cookbook) and are available on Vagrant Cloud as [darron/consul](https://vagrantcloud.com/darron/consul).
 
 ```
 git clone
