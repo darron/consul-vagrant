@@ -21,4 +21,17 @@ vagrant up server5
 
 You should have a fully working 5 member cluster at the end of this.
 
+To access the built in web ui that's new on 0.2.0 - you can add something similar to your `~/.ssh/config` file:
+
+```
+Host consulserver1
+  Hostname 127.0.0.1
+  Port 2222
+  IdentityFile /Users/your-name-goes-here/.vagrant.d/insecure_private_key
+  User vagrant
+  LocalForward 8500 localhost:8500
+```
+
+Double check for Hostname, Port and Identity file - the [web ui looks great](http://shared.froese.org/2014/0505100045j18fz.jpg).
+
 When you're done - just `vagrant destroy` to cleanup.
