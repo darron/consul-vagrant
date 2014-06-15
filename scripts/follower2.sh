@@ -10,10 +10,10 @@ sudo cat > /etc/consul/config.json << EOL
   "advertise_addr": "192.168.2.4",
   "domain": "consul.",
   "recursor": "8.8.8.8",
-  "encrypt": "p4T1eTQtKji/Df3VrMMLzg=="
+  "encrypt": "p4T1eTQtKji/Df3VrMMLzg==",
+  "start_join": ["192.168.2.2"]
 }
 EOL
 service consul stop
 rm -rf /var/cache/consul/*
 service consul start
-consul join 192.168.2.2
